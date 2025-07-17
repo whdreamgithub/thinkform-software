@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkForm Software</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Lucide Icons -->
+  <script src="script/lucide.min.js"></script>
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      
+      <!-- Main navigation -->
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="#" class="flex-shrink-0">
+              <div class="text-blue-700 font-bold text-2xl">ThinkForm Software</div>
+            </a>
+            <nav class="hidden lg:flex ml-10 space-x-8">
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Solutions
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 3</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Services
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 3</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Industries
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 3</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Resources
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 3</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  About
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 3</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="flex items-center">
+            <button id="searchButton" class="p-2 text-gray-600 hover:text-blue-600">
+              <i data-lucide="search" class="w-5 h-5"></i>
+            </button>
+            <button id="mobileMenuButton" class="ml-2 p-2 lg:hidden text-gray-600 hover:text-blue-600">
+              <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search bar -->
+        <div id="searchBar" class="mt-4 relative hidden">
+          <input type="text" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-md">
+          <button class="absolute right-3 top-2.5 text-gray-500">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-50 lg:hidden bg-white hidden">
+      <div class="p-4 flex justify-between items-center border-b">
+        <div class="text-blue-700 font-bold text-2xl">ThinkForm Software</div>
+        <button id="closeMenuButton" class="text-gray-600">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="p-4">
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Solutions
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Services
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Industries
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Resources
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            About
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="mt-6 space-y-4">
+          <a href="#" class="block py-2 text-gray-600">Contact Us</a>
+          <a href="#" class="block py-2 text-gray-600">Careers</a>
+          <a href="#" class="block py-2 text-gray-600">Support</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="flex-grow">
+      <!-- Hero section -->
+      <section class="bg-blue-700 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+              Accelerate your digital transformation
+            </h1>
+            <p class="text-xl mb-8">
+              ThinkForm Software helps organizations across North America navigate an ever-changing technology landscape and
+              build the digital foundation that their business and workforce need to thrive.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition">
+                Explore Solutions
+              </a>
+              <a href="#" class="bg-transparent border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-700 transition">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured cards section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-10 text-center">Our Solutions</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/1/600/400" alt="A professional IT team working in a modern office environment with multiple screens showing cloud management interfaces" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-3">ThinkForm Software Managed Services</h3>
+                <p class="text-gray-600 mb-4">Maximize your technology investments with our managed services</p>
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                  Learn More
+                  <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/2/600/400" alt="Abstract visualization of cloud computing with connected nodes and digital elements representing cloud infrastructure" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-3">Cloud Solutions</h3>
+                <p class="text-gray-600 mb-4">Accelerate your cloud journey with our expert guidance</p>
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                  Explore Cloud
+                  <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/3/600/400" alt="Modern office space with employees collaborating using digital devices and smart technology" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-3">Digital Workplace</h3>
+                <p class="text-gray-600 mb-4">Transform your workplace with modern collaboration tools</p>
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                  See Solutions
+                  <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why ThinkForm Software section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+              <img src="https://picsum.photos/id/20/800/600" alt="IT professionals collaborating in a modern office environment with digital displays showing cloud infrastructure diagrams" class="rounded-lg shadow-md w-full">
+            </div>
+            <div class="md:w-1/2">
+              <h2 class="text-3xl font-bold mb-6">Why ThinkForm Software?</h2>
+              <p class="text-gray-600 mb-6">
+                For over 30 years, ThinkForm Software has been helping organizations navigate complex technology challenges and
+                unlock the full potential of their IT investments.
+              </p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <div class="bg-blue-100 p-1 rounded-full mr-3 mt-1">
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-blue-600"></i>
+                  </div>
+                  <span>End-to-end technology solutions and services</span>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-blue-100 p-1 rounded-full mr-3 mt-1">
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-blue-600"></i>
+                  </div>
+                  <span>Strategic partnerships with leading technology providers</span>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-blue-100 p-1 rounded-full mr-3 mt-1">
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-blue-600"></i>
+                  </div>
+                  <span>Expert guidance and support at every step</span>
+                </li>
+              </ul>
+              <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                Learn more about us
+                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Insights section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-10">
+            <h2 class="text-3xl font-bold">Latest Insights</h2>
+            <a href="#" class="hidden md:inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+              View all resources
+              <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+            </a>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/4/400/300" alt="Futuristic digital graphic showing technology trend visualization with data points and growth charts" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <div class="text-xs font-semibold text-blue-600 mb-2">REPORT</div>
+                <h3 class="text-lg font-bold mb-2">2023 Technology Trends</h3>
+                <a href="#" class="inline-flex items-center text-blue-600 text-sm font-medium hover:text-blue-800">
+                  Read more
+                  <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/5/400/300" alt="Diagram showing cloud migration process with arrows pointing from on-premise servers to cloud infrastructure" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <div class="text-xs font-semibold text-blue-600 mb-2">GUIDE</div>
+                <h3 class="text-lg font-bold mb-2">Cloud Migration Strategy</h3>
+                <a href="#" class="inline-flex items-center text-blue-600 text-sm font-medium hover:text-blue-800">
+                  Read more
+                  <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/6/400/300" alt="Digital security concept with shield icon and lock symbols protecting data visualization" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <div class="text-xs font-semibold text-blue-600 mb-2">WHITEPAPER</div>
+                <h3 class="text-lg font-bold mb-2">Cybersecurity Best Practices</h3>
+                <a href="#" class="inline-flex items-center text-blue-600 text-sm font-medium hover:text-blue-800">
+                  Read more
+                  <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://picsum.photos/id/7/400/300" alt="Professional speaker presenting at a digital transformation webinar with slides showing business transformation journey" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <div class="text-xs font-semibold text-blue-600 mb-2">EVENT</div>
+                <h3 class="text-lg font-bold mb-2">Digital Transformation Webinar</h3>
+                <a href="#" class="inline-flex items-center text-blue-600 text-sm font-medium hover:text-blue-800">
+                  Read more
+                  <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 text-center md:hidden">
+            <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+              View all resources
+              <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-4 text-center">Our Technology Partners</h2>
+          <p class="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+            We partner with industry-leading technology providers to deliver comprehensive solutions tailored to your
+            business needs.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+            <div class="flex justify-center">
+              <img src="https://picsum.photos/id/10/200/100" alt="Microsoft logo" class="h-12 object-contain grayscale hover:grayscale-0 transition">
+            </div>
+            <div class="flex justify-center">
+              <img src="https://picsum.photos/id/11/200/100" alt="AWS logo" class="h-12 object-contain grayscale hover:grayscale-0 transition">
+            </div>
+            <div class="flex justify-center">
+              <img src="https://picsum.photos/id/12/200/100" alt="Google Cloud logo" class="h-12 object-contain grayscale hover:grayscale-0 transition">
+            </div>
+            <div class="flex justify-center">
+              <img src="https://picsum.photos/id/13/200/100" alt="Cisco logo" class="h-12 object-contain grayscale hover:grayscale-0 transition">
+            </div>
+            <div class="flex justify-center">
+              <img src="https://picsum.photos/id/14/200/100" alt="VMware logo" class="h-12 object-contain grayscale hover:grayscale-0 transition">
+            </div>
+            <div class="flex justify-center">
+              <img src="https://picsum.photos/id/15/200/100" alt="Dell logo" class="h-12 object-contain grayscale hover:grayscale-0 transition">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA section -->
+      <section class="bg-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold mb-6">Ready to transform your business?</h2>
+          <p class="text-xl mb-8 max-w-3xl mx-auto">
+            Connect with our experts to discover how ThinkForm Software can help you achieve your technology goals.
+          </p>
+          <a href="#" class="bg-white text-blue-700 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition inline-block">
+            Contact Us Today
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 class="text-lg font-bold mb-4">Solutions</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Cloud</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Security</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Digital Workplace</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Infrastructure</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Software Asset Management</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Managed Services</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Professional Services</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Consulting</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Implementation</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Support</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Blog</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Webinars</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Case Studies</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Whitepapers</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Events</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Company</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-300 hover:text-white transition">About Us</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Leadership</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Careers</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Contact Us</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white transition">Locations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 mt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+              <div class="text-xl font-bold mb-2">ThinkForm Software</div>
+              <p class="text-gray-400 text-sm">
+                © <span id="currentYear"></span> ThinkForm Limited. All rights reserved.
+              </p>
+            </div>
+
+            <!--
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+              <a href="#" class="text-gray-400 hover:text-white">Terms of Use</a>
+              <a href="#" class="text-gray-400 hover:text-white">Sitemap</a>
+            </div>
+        -->
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
