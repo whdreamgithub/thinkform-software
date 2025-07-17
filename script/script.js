@@ -104,6 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
           lucide.createIcons();
         }
       } else {
+
+        /** 
         // Create new dropdown
         const dropdown = document.createElement('div');
         dropdown.className = 'mobile-dropdown pl-4 py-2';
@@ -117,7 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Insert after the button
         this.parentNode.insertBefore(dropdown, this.nextSibling);
-        
+       
+        */
         // Change icon to chevron-down
         const icon = this.querySelector('[data-lucide="chevron-right"]');
         if (icon && typeof lucide !== 'undefined' && lucide.createIcons) {
