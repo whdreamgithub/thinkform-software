@@ -116,3 +116,61 @@
 #searchBar.active {
   display: block;
 }
+
+/* Fix for dropdown menu hover issue */
+.group {
+  position: relative;
+}
+
+.group .group-hover\:block {
+  display: none;
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+/* Create a bridge between the button and dropdown to prevent menu from disappearing */
+.group::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  z-index: 5;
+}
+
+/* Ensure dropdown menu has proper z-index and positioning */
+.group .group-hover\:block {
+  z-index: 10;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 12rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 0;
+}
+
+/* Add hover effect to dropdown items */
+.group .group-hover\:block a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #374151;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.group .group-hover\:block a:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Ensure the dropdown stays visible when hovering over it */
+.group .group-hover\:block:hover {
+  display: block;
+}
