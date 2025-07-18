@@ -24,7 +24,11 @@
   .container {
     max-width: 768px;
   }
+
+ 
 }
+
+
 
 @media (min-width: 1024px) {
   .container {
@@ -173,4 +177,11 @@
 /* Ensure the dropdown stays visible when hovering over it */
 .group .group-hover\:block:hover {
   display: block;
+}
+
+
+@media (max-width: 768px) {
+  #footermenu {
+    display: none;
+  }
 }
