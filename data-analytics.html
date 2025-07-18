@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analytics Solutions - ThinkForm Limited</title>
+  <meta name="description" content="Transform your business with advanced data analytics solutions. Unlock insights, drive decisions, and accelerate growth with our expert analytics services.">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Lucide Icons -->
+  <script src="script/lucide.min.js"></script>
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      
+      <!-- Main navigation -->
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html" class="flex-shrink-0">
+              <div class="text-blue-700 font-bold text-2xl">ThinkForm Limited</div>
+            </a>
+            <nav class="hidden lg:flex ml-10 space-x-8">
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Solutions
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="cloud-solutions.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cloud Migration</a>
+                  <a href="data-analytics.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Data Analytics</a>
+                  <a href="managed-services.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Managed Services</a>
+                  <a href="digital-workplace.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Digital Workplace</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Services
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="consulting.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">IT Consulting</a>
+                  <a href="implementation.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Implementation</a>
+                  <a href="support.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">24/7 Support</a>
+                  <a href="training.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Training</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Industries
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="finance.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Financial Services</a>
+                  <a href="healthcare.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Healthcare</a>
+                  <a href="retail.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Retail & E-commerce</a>
+                  <a href="manufacturing.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manufacturing</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  Resources
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog & Insights</a>
+                  <a href="case-studies.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Case Studies</a>
+                  <a href="webinars.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Webinars</a>
+                  <a href="whitepapers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Whitepapers</a>
+                </div>
+              </div>
+              <div class="relative group">
+                <button class="flex items-center text-gray-800 hover:text-blue-600 font-medium">
+                  About
+                  <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                </button>
+                <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md py-2 z-10 hidden group-hover:block">
+                  <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</a>
+                  <a href="about.html#leadership" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Leadership</a>
+                  <a href="careers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Careers</a>
+                  <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Us</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="flex items-center">
+            <button id="searchButton" class="p-2 text-gray-600 hover:text-blue-600" style="display: none;">
+              <i data-lucide="search" class="w-5 h-5"></i>
+            </button>
+            <button id="mobileMenuButton" class="ml-2 p-2 lg:hidden text-gray-600 hover:text-blue-600">
+              <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search bar -->
+        <div id="searchBar" class="mt-4 relative hidden">
+          <input type="text" placeholder="Search solutions, services, resources..." class="w-full p-2 border border-gray-300 rounded-md">
+          <button class="absolute right-3 top-2.5 text-gray-500">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-50 lg:hidden bg-white hidden">
+      <div class="p-4 flex justify-between items-center border-b">
+        <div class="text-blue-700 font-bold text-2xl">ThinkForm Limited</div>
+        <button id="closeMenuButton" class="text-gray-600">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="p-4">
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Solutions
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+          <div class="mobile-dropdown pl-4 py-2 hidden">
+            <a href="cloud-solutions.html" class="block py-2 text-gray-600">Cloud Migration</a>
+            <a href="data-analytics.html" class="block py-2 text-gray-600">Data Analytics</a>
+            <a href="managed-services.html" class="block py-2 text-gray-600">Managed Services</a>
+            <a href="digital-workplace.html" class="block py-2 text-gray-600">Digital Workplace</a>
+          </div>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Services
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+          <div class="mobile-dropdown pl-4 py-2 hidden">
+            <a href="consulting.html" class="block py-2 text-gray-600">IT Consulting</a>
+            <a href="implementation.html" class="block py-2 text-gray-600">Implementation</a>
+            <a href="support.html" class="block py-2 text-gray-600">24/7 Support</a>
+            <a href="training.html" class="block py-2 text-gray-600">Training</a>
+          </div>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Industries
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+          <div class="mobile-dropdown pl-4 py-2 hidden">
+            <a href="finance.html" class="block py-2 text-gray-600">Financial Services</a>
+            <a href="healthcare.html" class="block py-2 text-gray-600">Healthcare</a>
+            <a href="retail.html" class="block py-2 text-gray-600">Retail & E-commerce</a>
+            <a href="manufacturing.html" class="block py-2 text-gray-600">Manufacturing</a>
+          </div>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            Resources
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+          <div class="mobile-dropdown pl-4 py-2 hidden">
+            <a href="blog.html" class="block py-2 text-gray-600">Blog & Insights</a>
+            <a href="case-studies.html" class="block py-2 text-gray-600">Case Studies</a>
+            <a href="webinars.html" class="block py-2 text-gray-600">Webinars</a>
+            <a href="whitepapers.html" class="block py-2 text-gray-600">Whitepapers</a>
+          </div>
+        </div>
+        <div class="py-2 border-b border-gray-200">
+          <button class="flex justify-between items-center w-full text-left py-2 text-gray-800">
+            About
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+          <div class="mobile-dropdown pl-4 py-2 hidden">
+            <a href="about.html" class="block py-2 text-gray-600">About Us</a>
+            <a href="about.html#leadership" class="block py-2 text-gray-600">Leadership</a>
+            <a href="careers.html" class="block py-2 text-gray-600">Careers</a>
+            <a href="contact.html" class="block py-2 text-gray-600">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="flex-grow">
+      <!-- Hero section -->
+      <section class="bg-blue-700 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+              Data Analytics Solutions
+            </h1>
+            <p class="text-xl mb-8">
+              Transform your business with powerful data analytics. Unlock actionable insights, drive informed decisions, 
+              and accelerate growth with our comprehensive analytics solutions and expert guidance.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="contact.html" class="bg-transparent border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-700 transition">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Analytics Benefits -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-10 text-center">Why Choose Data Analytics?</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <i data-lucide="trending-up" class="w-8 h-8 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-center">Data-Driven Decisions</h3>
+              <p class="text-gray-600 text-center">Make informed business decisions based on real-time data insights and predictive analytics.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <i data-lucide="target" class="w-8 h-8 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-center">Improved Performance</h3>
+              <p class="text-gray-600 text-center">Identify bottlenecks, optimize processes, and enhance operational efficiency across your organization.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-center">Customer Insights</h3>
+              <p class="text-gray-600 text-center">Understand customer behavior, preferences, and trends to deliver personalized experiences.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <i data-lucide="dollar-sign" class="w-8 h-8 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-center">Revenue Growth</h3>
+              <p class="text-gray-600 text-center">Identify new opportunities, optimize pricing strategies, and increase profitability through data insights.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <i data-lucide="shield" class="w-8 h-8 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-center">Risk Management</h3>
+              <p class="text-gray-600 text-center">Detect anomalies, predict potential risks, and implement proactive risk mitigation strategies.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <i data-lucide="lightbulb" class="w-8 h-8 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-center">Innovation Catalyst</h3>
+              <p class="text-gray-600 text-center">Discover new business models, products, and services through advanced analytics and AI insights.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics Process -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-10 text-center">Our Data Analytics Process</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="bg-blue-700 text-white rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">1</div>
+              <h3 class="text-xl font-bold mb-3">Data Discovery</h3>
+              <p class="text-gray-600">Identify and assess all data sources, understand data quality, and define business objectives for analytics initiatives.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-blue-700 text-white rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">2</div>
+              <h3 class="text-xl font-bold mb-3">Data Preparation</h3>
+              <p class="text-gray-600">Clean, transform, and integrate data from multiple sources to create a unified, analytics-ready dataset.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-blue-700 text-white rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">3</div>
+              <h3 class="text-xl font-bold mb-3">Analysis & Modeling</h3>
+              <p class="text-gray-600">Apply advanced analytics techniques, machine learning models, and statistical analysis to extract insights.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-blue-700 text-white rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">4</div>
+              <h3 class="text-xl font-bold mb-3">Insights & Action</h3>
+              <p class="text-gray-600">Visualize results, communicate insights, and implement data-driven strategies to achieve business outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics Platforms -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-4 text-center">Analytics Platforms We Support</h2>
+          <p class="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+            We work with leading analytics platforms to deliver powerful insights and business intelligence solutions
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+              <img src="image/Microsoft_700px.png" alt="Power BI" class="h-16 mx-auto mb-4">
+              <h3 class="text-xl font-bold mb-3">Microsoft Power BI</h3>
+              <p class="text-gray-600 mb-4">Interactive data visualization and business intelligence platform for creating compelling reports and dashboards.</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Interactive Dashboards</li>
+                <li>• Real-time Analytics</li>
+                <li>• AI-powered Insights</li>
+                <li>• Enterprise Security</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+              <img src="image/Google_700px.png" alt="Google Analytics" class="h-16 mx-auto mb-4">
+              <h3 class="text-xl font-bold mb-3">Google Analytics</h3>
+              <p class="text-gray-600 mb-4">Comprehensive web analytics platform for understanding user behavior and website performance.</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• User Behavior Analysis</li>
+                <li>• Conversion Tracking</li>
+                <li>• Custom Reports</li>
+                <li>• E-commerce Analytics</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+              <img src="image/AWS_700px.png" alt="Amazon QuickSight" class="h-16 mx-auto mb-4">
+              <h3 class="text-xl font-bold mb-3">Amazon QuickSight</h3>
+              <p class="text-gray-600 mb-4">Cloud-native business intelligence service for building interactive dashboards and visualizations.</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• ML-powered Insights</li>
+                <li>• Natural Language Q&A</li>
+                <li>• Embedded Analytics</li>
+                <li>• Pay-per-session Pricing</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+              <img src="image/Google_700px.png" alt="Google BigQuery" class="h-16 mx-auto mb-4">
+              <h3 class="text-xl font-bold mb-3">Google BigQuery</h3>
+              <p class="text-gray-600 mb-4">Serverless, highly scalable data warehouse for running fast SQL queries on large datasets.</p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Petabyte-scale Analytics</li>
+                <li>• Real-time Data Processing</li>
+                <li>• Machine Learning Integration</li>
+                <li>• Built-in ML Models</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics Services -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-10 text-center">Data Analytics Services</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border">
+              <div class="p-6">
+                <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mb-4 flex items-center justify-center">
+                  <i data-lucide="bar-chart-3" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Business Intelligence</h3>
+                <p class="text-gray-600 mb-4">Transform raw data into actionable insights with interactive dashboards and comprehensive reporting.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Interactive Dashboards</li>
+                  <li>• Real-time Reporting</li>
+                  <li>• KPI Monitoring</li>
+                  <li>• Executive Summaries</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border">
+              <div class="p-6">
+                <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mb-4 flex items-center justify-center">
+                  <i data-lucide="brain" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Predictive Analytics</h3>
+                <p class="text-gray-600 mb-4">Leverage machine learning and statistical models to forecast trends and predict future outcomes.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Trend Forecasting</li>
+                  <li>• Risk Assessment</li>
+                  <li>• Demand Planning</li>
+                  <li>• Customer Segmentation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border">
+              <div class="p-6">
+                <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mb-4 flex items-center justify-center">
+                  <i data-lucide="database" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Data Engineering</h3>
+                <p class="text-gray-600 mb-4">Build robust data pipelines and infrastructure to collect, process, and store data efficiently.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• ETL Pipeline Development</li>
+                  <li>• Data Warehouse Design</li>
+                  <li>• Data Quality Management</li>
+                  <li>• Real-time Processing</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border">
+              <div class="p-6">
+                <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mb-4 flex items-center justify-center">
+                  <i data-lucide="search" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Advanced Analytics</h3>
+                <p class="text-gray-600 mb-4">Apply sophisticated analytical techniques to uncover deep insights and patterns in your data.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Statistical Analysis</li>
+                  <li>• Pattern Recognition</li>
+                  <li>• Anomaly Detection</li>
+                  <li>• Root Cause Analysis</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border">
+              <div class="p-6">
+                <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mb-4 flex items-center justify-center">
+                  <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Customer Analytics</h3>
+                <p class="text-gray-600 mb-4">Understand customer behavior, preferences, and lifetime value to drive personalized strategies.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Customer Journey Mapping</li>
+                  <li>• Churn Prediction</li>
+                  <li>• Personalization Engines</li>
+                  <li>• Customer Lifetime Value</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border">
+              <div class="p-6">
+                <div class="bg-blue-100 p-3 rounded-full w-16 h-16 mb-4 flex items-center justify-center">
+                  <i data-lucide="graduation-cap" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Analytics Training</h3>
+                <p class="text-gray-600 mb-4">Empower your team with the skills and knowledge to leverage analytics tools and insights effectively.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Tool-specific Training</li>
+                  <li>• Data Literacy Programs</li>
+                  <li>• Best Practices Workshops</li>
+                  <li>• Certification Support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success Stories -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-10 text-center">Success Stories</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                  <i data-lucide="shopping-cart" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">E-commerce Retailer</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Implemented customer analytics and predictive modeling, resulting in 35% increase in conversion rates and 25% reduction in customer churn.</p>
+              <div class="flex items-center text-sm text-gray-500">
+                <i data-lucide="trending-up" class="w-4 h-4 mr-1"></i>
+                <span>35% increase in conversions</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                  <i data-lucide="factory" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Manufacturing Company</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Deployed predictive maintenance analytics, reducing equipment downtime by 40% and saving $2M annually in maintenance costs.</p>
+              <div class="flex items-center text-sm text-gray-500">
+                <i data-lucide="trending-up" class="w-4 h-4 mr-1"></i>
+                <span>40% reduction in downtime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA section -->
+      <section class="bg-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold mb-6">Ready to Unlock Your Data's Potential?</h2>
+          <p class="text-xl mb-8 max-w-3xl mx-auto">
+            Let our data analytics experts help you transform raw data into actionable insights that drive business growth.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="contact.html" class="bg-white text-blue-700 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition inline-block">
+              Contact Us Now
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <div>
+            <h3 class="text-lg font-bold mb-4">Solutions</h3>
+            <ul class="space-y-2">
+              <li><a href="cloud-solutions.html" class="text-gray-300 hover:text-white transition">Cloud Migration</a></li>
+              <li><a href="data-analytics.html" class="text-gray-300 hover:text-white transition">Data Analytics</a></li>
+              <li><a href="managed-services.html" class="text-gray-300 hover:text-white transition">Managed Services</a></li>  
+              <li><a href="digital-workplace.html" class="text-gray-300 hover:text-white transition">Digital Workplace</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li><a href="consulting.html" class="text-gray-300 hover:text-white transition">IT Consulting</a></li>
+              <li><a href="implementation.html" class="text-gray-300 hover:text-white transition">Implementation</a></li>
+              <li><a href="support.html" class="text-gray-300 hover:text-white transition">24/7 Support</a></li>
+              <li><a href="training.html" class="text-gray-300 hover:text-white transition">Training</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Industries</h3>
+            <ul class="space-y-2">
+              <li><a href="consulting.html" class="text-gray-300 hover:text-white transition">Financial Services</a></li>
+              <li><a href="implementation.html" class="text-gray-300 hover:text-white transition">Healthcare</a></li>
+              <li><a href="support.html" class="text-gray-300 hover:text-white transition">Retail & E-commerce</a></li>
+              <li><a href="training.html" class="text-gray-300 hover:text-white transition">Manufacturing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li><a href="blog.html" class="text-gray-300 hover:text-white transition">Blog & Insights</a></li>
+              <li><a href="case-studies.html" class="text-gray-300 hover:text-white transition">Case Studies</a></li>
+              <li><a href="webinars.html" class="text-gray-300 hover:text-white transition">Webinars</a></li>
+              <li><a href="whitepapers.html" class="text-gray-300 hover:text-white transition">Whitepapers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">About</h3>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+              <li><a href="about.html#leadership" class="text-gray-300 hover:text-white transition">Leadership</a></li>
+              <li><a href="careers.html" class="text-gray-300 hover:text-white transition">Careers</a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 mt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+              <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+                <div class="text-xl font-bold mb-2 md:mb-0">ThinkForm Limited</div>
+                <p class="text-gray-400 text-sm">
+                  © <span id="currentYear"></span> ThinkForm Limited. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html> 
