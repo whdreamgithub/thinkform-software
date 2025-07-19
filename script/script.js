@@ -39,7 +39,7 @@ function initMenu(){
                   <a href="blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog & Insights</a>
                   <a href="case-studies.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Case Studies</a>
                   <a href="webinars.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Webinars</a>
-                  <a href="whitepapers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Whitepapers</a>
+                 
                 </div>
               </div>
               <div class="relative group">
@@ -92,7 +92,7 @@ function initMenu(){
             <a href="blog.html" class="block py-2 text-gray-600">Blog & Insights</a>
             <a href="case-studies.html" class="block py-2 text-gray-600">Case Studies</a>
             <a href="webinars.html" class="block py-2 text-gray-600">Webinars</a>
-            <a href="whitepapers.html" class="block py-2 text-gray-600">Whitepapers</a>
+           
           </div>
         </div>
 
@@ -140,7 +140,7 @@ function initMenu(){
               <li><a href="blog.html" class="text-gray-300 hover:text-white transition">Blog & Insights</a></li>
               <li><a href="case-studies.html" class="text-gray-300 hover:text-white transition">Case Studies</a></li>
               <li><a href="webinars.html" class="text-gray-300 hover:text-white transition">Webinars</a></li>
-              <li><a href="whitepapers.html" class="text-gray-300 hover:text-white transition">Whitepapers</a></li>
+          
             </ul>
           </div>
           <div>
